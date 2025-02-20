@@ -41,7 +41,7 @@ To achieve this, allocate the IPs outside the VPC module declaration.
 resource "aws_eip" "nat" {
   count = 3
 
-  vpc = true
+  domain = "vpc"
 }
 ```
 
